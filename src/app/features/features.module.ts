@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { LoginComponent } from './login/login.component';
+import { LoginComponent } from './login';
 import { RouterModule } from '@angular/router';
 
 @NgModule({
@@ -9,6 +9,11 @@ import { RouterModule } from '@angular/router';
   ],
   imports: [
     CommonModule,
+
+
+
+
+
     RouterModule
   ]
 })

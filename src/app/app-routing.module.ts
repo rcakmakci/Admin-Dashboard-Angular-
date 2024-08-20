@@ -4,7 +4,7 @@ import { MainLayoutComponent } from './layouts/main-layout';
 
 const routes: Routes = [
   { path: "", redirectTo: "/admin", pathMatch: "full" },
-  { 
+  {
     path: "admin", component: MainLayoutComponent, children: [
       { path: '', loadChildren: () => import('./features/dashboards').then(m => m.DashboardModule) },
       { path: 'products', loadChildren: () => import('./features/products').then(m => m.ProductsModule) },

@@ -1,0 +1,13 @@
+.container {
+  display: grid;
+  grid-template-columns: 18% 82%;
+  height: 100vh;
+}
+
+app-sidebar {
+  border-right: 1px solid #ccc;
+}
+
+.right-side {
+
+}

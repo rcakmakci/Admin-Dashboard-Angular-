@@ -1,1 +1,25 @@
-<p>login works!</p>
+<div class="login-box">
+  <div class="logo">
+    <img src="your-logo-path.svg" alt="Materio Logo">
+  </div>
+  <h1>Hanımeli'ye Hoşgeldin! 👋</h1>
+  <p>Maceraya atlamadan önce lütfen giriş yap</p>
+  <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+    <div class="input-group">
+      <input type="text" formControlName="email" placeholder="Email or Username" required>
+    </div>
+    <div class="input-group">
+      <input type="password" formControlName="password" placeholder="Password" required>
+    </div>
+
+    <button type="submit">Login</button>
+  </form>
+</div>
+
+<footer>
+  <img class="footer-bg-three" src="https://demos.themeselection.com/materio-bootstrap-html-laravel-admin-template/demo/assets/img/illustrations/tree-3.png" alt="">
+  <img class="footer-bg" src="https://demos.themeselection.com/materio-bootstrap-html-laravel-admin-template/demo/assets/img/illustrations/auth-basic-mask-light.png" alt="">
+</footer>
+
+
+
