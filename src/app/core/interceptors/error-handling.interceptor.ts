@@ -5,7 +5,7 @@ import { NgxSpinnerService } from 'ngx-spinner';
 import { of } from 'rxjs';
 import { catchError } from 'rxjs/operators';
 import { CustomToastrService, ToastrMessageType, ToastrPosition } from '../ui/custom-toastr.service';
-import { UserAuthService } from './models/user-auth.service';
+import { UserAuthService } from './user-auth.service';
 
 export const errorHandlingInterceptor: HttpInterceptorFn = (req, next) => {
   const toastrService = inject(CustomToastrService);
@@ -57,11 +57,6 @@ export const errorHandlingInterceptor: HttpInterceptorFn = (req, next) => {
             position: ToastrPosition.BottomFullWidth
           });
           break;
-
-
-
-
-
         default:
           toastrService.message("Beklenmeyen bir hata meydana gelmiştir!", "Hata!", {
             messageType: ToastrMessageType.Warning,

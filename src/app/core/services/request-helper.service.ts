@@ -24,16 +24,6 @@ export class RequestHelperService {
     return this.httpClient.get<T>(url, { headers: requestParameter.headers, responseType: requestParameter.responseType as 'json' });
   }
 
-
-
-
-
-
-
-  
-
-
-
   post<T>(requestParameter: Partial<RequestParameters>, body: Partial<T>): Observable<T> {
     let url: string = "";
     if (requestParameter.fullEndPoint)

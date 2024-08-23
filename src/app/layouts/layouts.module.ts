@@ -15,7 +15,7 @@ import { SidebarComponent } from './main-layout/components/sidebar/sidebar.compo
   ],
   imports: [
     CommonModule,
-    RouterModule
+    RouterModule,
   ],
   exports : [
     MainLayoutComponent
